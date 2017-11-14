@@ -1,0 +1,55 @@
+#player-infos {
+
+    cursor: url('../../assets/gam375.cur'), auto;
+
+    position: absolute;
+
+    width: 100%;
+    height: 10%;
+
+    background-color: rgba(255, 255, 255, 0.192);
+    box-shadow: 4px 11px 24px -4px rgba(0,0,0,0.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: "Lifecraft";
+
+    h4:first-letter {
+        text-transform: uppercase;
+    }
+    
+    h4 {
+        margin: 0px;
+        margin-left: 10%;
+        color: #f2bc11;
+        text-shadow: 2px 2px 8px rgb(14, 11, 75);
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+
+    #lvl-player {
+        font-size: 30px;
+        color: #5ae453;
+        text-shadow: 2px 2px 8px rgb(43, 43, 43);
+    }
+
+    div {
+
+        width: 3%;
+        margin-right: 15%;
+        display: inherit;
+
+        #gold-img {
+            width: 188%;
+            height: 0%;
+        }
+
+        p {
+            font-size: 30px;
+            padding-top: 18%;
+        }
+    }
+    
+}

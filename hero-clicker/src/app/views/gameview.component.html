@@ -1,0 +1,19 @@
+<div id="game-view">
+    <img src="assets/_pictures/1408199802-bugclickheros.png" alt="" id="platform">
+    <img src="assets/_pictures/frame-monster.png" alt="" id="frame-monster">
+    <img *ngIf="boss" src="assets/_pictures/{{boss.path_img}}" alt="" id="img-monster" (click)="Attack()">
+    <h3 *ngIf="boss" id="monster-name">{{boss.name}}</h3>
+    <div id="healthbar-back">
+        <div id="healthbar-contain">
+            <div *ngIf="boss" [ngStyle]="{ 'width': widthLife }" id="healthbar"></div>
+        </div>
+    </div>
+    <p *ngIf="boss" id="lifepoints">{{pointsDisplay}}%</p>
+    <img src="../../assets/_pictures/border-top.jpg" title="Click to display the weapon's store" id="border-top" (click)="displayedStore()">
+    <app-weaponstore [displayStore]="displayStore" [test]="test"></app-weaponstore>
+    <div id="form">
+        <input type="text" placeholder="Cheatcode" #inputCheatcode>
+        <input type="number" #inputNumber>
+        <button (click)="cheatcode(inputCheatcode.value, inputNumber.value)">Send</button>
+    </div>
+</div>

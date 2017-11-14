@@ -1,0 +1,12 @@
+<div *ngIf="displayStore">
+    <div *ngIf="displayer()" class="weapons">
+        <p>Next lvl : {{weapon.lvl}}</p>
+        <div class="gold">
+             <img src="../../assets/_pictures/Gold_purse.png" alt=""> 
+             <p>{{weapon.price}}</p>
+        </div>
+        <img (click)="upWeapon()" src="../../assets/_pictures/doomhammer.png" alt="" id="weapon-icon">
+        <h5>{{weapon.name}}</h5>
+        <p>Properties : increase attack by +{{weapon.attack}}</p>
+    </div>
+</div>

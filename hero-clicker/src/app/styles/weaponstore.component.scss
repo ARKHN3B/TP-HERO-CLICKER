@@ -1,0 +1,61 @@
+div {
+    background-color: rgba(234, 232, 201, 0.92);
+    width: 100%;
+    height: 100%;
+    border: 6px solid #483325;
+    border-bottom-left-radius: 39px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+
+    cursor: url('../../assets/gam375.cur'), auto;
+
+    .weapons {
+
+        background-color: rgba(255, 255, 255, 0);
+
+        width: 90%;
+        height: auto;
+        border: unset;
+        border-bottom: 1.5px solid #452f22;
+        border-radius: unset;
+        padding-top: 0px; 
+
+        overflow: hidden;
+
+        font-family: "Lifecraft";
+
+        h5 {
+            font-size: 32px;
+            margin: 19px 0px 0px 0px;
+            color: #223314;
+        }
+
+        .gold {
+            border: unset;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            flex-direction: row;
+    
+            padding: 0px;
+            width: 47%;
+            position: relative;
+            left: 29%;
+    
+            img {
+                width: 18%;
+                margin-right: 5%;
+            }
+    
+            p {
+                color: #5f3f00;
+            }
+        }
+    }
+}

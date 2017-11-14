@@ -1,0 +1,10 @@
+<div id="player-infos">
+    <h4 *ngIf="user">{{user.username}}</h4>
+    <p *ngIf="user" id="lvl-player">Lvl {{lvl}}</p>
+    <div>
+        <img src="assets/_pictures/achat-po-wow-gold-world-of-warcraft.png" 
+            alt=""
+            id="gold-img"> 
+        <p *ngIf="user">{{gold}}</p> 
+    </div>
+</div>
